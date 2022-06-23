@@ -191,7 +191,7 @@ nome = 'Gigi'
 sobrenome = 'Hadid'
 #import pdb;pdb.set_trace() #Importmaos o pdb assim para apagar assim que finalizarmos o uso
 #a partir do python 3.7 pdb é built in, usamos a função breakpoint
-breakpoint()
+#breakpoint()
 nome_completo = nome + ' ' + sobrenome
 curso = 'Python Básico ao Essencial'
 final = nome_completo + ' faz o curso ' + curso
