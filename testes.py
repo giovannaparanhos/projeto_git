@@ -32,12 +32,29 @@ testes que colocamos nas docsyrings das funções/metodos python.
 para rodar umtest do doctest:
 python -m doctest -v nome_do_modulo.py
 
-
-'''
-import doctest
 def soma(a, b):
     """soma a e b
-    >>>soma(1,2)
-    3
+    #>>> soma(1,2)
+    #3
     """
     return a+b
+'''
+
+import doctest
+def duplicar(valores):
+    '''duplica os valores numa lista
+    >>> duplicar([1, 2, 3, 4])
+    [2, 4, 6, 8]
+
+    >>> duplicar([])
+    []
+
+    >>> duplicar(['a', 'b','c'])
+    ['aa', 'bb', 'cc']
+
+    >>> duplicar([True, None])
+    Traceback (most recent call last):
+      ...
+    TypeError: unsupported operand type(s) for *: 'int' and 'NoneType'
+    '''
+    return [2* item for item in valores]
